@@ -30,7 +30,7 @@ const saveHandler = () => {
     localStorage.setItem("highScore", JSON.stringify(highScore));
     localStorage.removeItem("score");
     nameInput.value = "";
-    window.location.assign("https://realthecarlo.github.io/Quiz-APP/");
+    window.location.assign("https://realthecarlo.github.io/Quiz-APP/index.html");
   }
 };
 
