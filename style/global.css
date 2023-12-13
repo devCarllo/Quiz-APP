@@ -1,0 +1,23 @@
+@font-face {
+    font-family: font;
+    src: url("../font/CATHRA.otf") format("opentype"),
+     url("../font/CATHRARegular.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: font;
+}
+body{
+    max-width: 480px;
+    background-color: #d4d8f0;
+    margin: 0 auto;
+}
+main{
+    width: 100%;
+
+}

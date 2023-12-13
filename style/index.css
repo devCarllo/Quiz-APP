@@ -1,0 +1,41 @@
+/* __________ Start Page __________ */
+.start-page{
+    width: 80%;
+    margin: 10% auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.start-header{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.start-header h2{
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #232946;
+    letter-spacing: 10px;
+}
+.start-main{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.start-main a{
+    background-color:#fffffe ;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 8px;
+    color: #232946;
+    transition: all ease-in 0.2s;
+    border: 1px solid #121629;
+}
+.start-main a:hover{
+    background-color: #eebbc3;
+}

@@ -1,0 +1,99 @@
+.score-page{
+    width: 80%;
+    margin: 10% auto;
+    padding: 10px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score-title_container{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+.score-title{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #232946;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #d4d8f0;
+}
+.score-title::after{
+    content: " ";
+    background: rgb(6,18,83);
+    background: linear-gradient(90deg, rgba(6,18,83,1) 0%, rgba(151,125,232,1) 50%, rgba(85,0,121,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 8px;
+    transition: all ease-in .2s;
+    inset: -4px;
+    opacity: 1;
+    filter: blur(7px);
+}
+.score-records_container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #232946;
+}
+.score-record{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #fffffe;
+    border: 2px solid #121629;
+    color: #232946;
+    transition: all ease-in 0.2s;
+}
+.score-record:hover{
+    background-color: #5bd7bc;
+}
+
+.score-rank{
+    width: 20px;
+    padding: 2px;
+    border: 1px solid #121629;
+    color: #232946;
+    border-radius: 3px;
+    background-color: #b8c1ec;
+}
+
+.score-username, .score-score{
+    color: #232946;
+    
+}
+
+.score-back{
+    width: 100%;
+    text-align: center;
+}
+.score-back a{
+    background-color: #b8c1ec;
+    color: #232946;
+    padding: 5px;
+    border: 2px solid #121629;
+    border-radius: 5px;
+    transition: all ease-in 0.2s;
+}
+.score-back a:hover{
+    background-color:#eebbc3;
+}

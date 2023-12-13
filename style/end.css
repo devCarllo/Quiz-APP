@@ -1,0 +1,85 @@
+.alert{
+    width: 70%;
+    padding: 2px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fe6681;
+    display: none;
+
+}
+
+.end-page{
+    width: 80%;
+    margin: 10% auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.end-score{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.end-score span{
+    width: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #121629;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #232946;
+    background-color: #b8c1ec;
+    font-weight: bold;
+}
+
+.end-username{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#end-name{
+    width: 50%;
+    border: 2px solid #121629;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffe;
+    color: #232946;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.end-option{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.end-option div{
+    width: 50%;
+    background-color: #b8c1ec;
+    padding: 5px;
+    border: 2px solid #121629;
+    border-radius: 5px;
+    transition: all ease-in 0.2s;
+    text-align: center;
+    color: #232946;
+    cursor: pointer;
+}
+.end-option div a{
+    color: #232946;
+}
+.end-option div a:visited{
+    color: #232946;
+}
+.end-option div:hover{
+    background-color: #eebbc3;
+}

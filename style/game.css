@@ -1,0 +1,175 @@
+/* __________ Start Page __________ */
+.loader{
+    display: block;
+    position: relative;
+    height: 32px;
+    width: 200px;
+    background: transparent;
+    border:2px solid #121629;
+    color: #232946;
+    overflow: hidden;
+    margin: 40% auto;
+    border-radius: 8px;
+  }
+  .loader::before{
+    content: '';
+    background: #232946;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    animation: loading 2s linear forwards;
+  }
+  .loader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #eebbc3;
+    mix-blend-mode: difference;
+    animation: percentage 2s linear forwards;
+  }
+  
+  @keyframes loading {
+    0% { width: 0 }
+    100% { width: 100% }
+  }
+  @keyframes percentage {
+    0% { content: "0%"}
+    5% { content: "5%"}
+    10% { content: "10%"}
+    20% { content: "20%"}
+    30% { content: "30%"}
+    40% { content: "40%"}
+    50% { content: "50%"}
+    60% { content: "60%"}
+    70% { content: "70%"}
+    80% { content: "80%"}
+    90% { content: "90%"}
+    95% { content: "95%"}
+    96% { content: "96%"}
+    97% { content: "97%"}
+    98% { content: "98%"}
+    99% { content: "99%"}
+    100% { content: "100%"}
+  }
+  
+  
+.game-page{
+    width: 80%;
+    margin: 10% auto;
+    padding: 10px;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.game-score{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.game-score div span{
+    padding: 5px;
+    color: #232946;
+    font-size: 1.2rem;
+}
+.game-score div span span{
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+    color: #232946;
+    background-color: #b8c1ec;
+    border-radius: 5px;
+    border: 1px solid #121629;
+}
+
+.game-question{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.game-question p{
+    width: 100%;
+    text-align: left;
+    background-color: #fffffe;
+    padding: 7px;
+    border-radius: 8px;
+    color: #232946;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border: 2px solid #121629;
+}
+.answer{
+    width: 100%;
+    background-color: #fffffe;
+    color: #232946;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 7px;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+    border: 2px solid #121629;
+}
+.answer:hover{
+    border: 2px solid #fffffe;
+}
+
+.game-button{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.game-button button{
+    width: 70px;
+    margin: 0 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #b8c1ec;
+    color: #232946;
+    border: 1px solid #121629;
+    transition: all ease-in 0.2s;
+}
+.game-btn1:hover{
+    background-color:#121629;
+    color: #b8c1ec;
+}
+.game-btn2:hover{
+    background-color:#eebbc3;
+}
+
+.correct{
+    background-color: #5bd7bc;
+    border: 2px solid #fffffe;
+}
+.incorrect{
+    background-color: #fe6681;
+    border: 2px solid #fffffe;
+}
+.error{
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    margin: 10% auto;
+    color: #232946;
+    display: none;
+    font-size: 1.5rem;
+    background-color: #fe6681;
+    border-radius: 8px;
+    border: 2px solid #fffffe;
+}
