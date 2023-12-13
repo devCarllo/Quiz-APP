@@ -4,13 +4,13 @@ const difficulty = document.querySelectorAll(".difficulty-btn");
 const difficultyHandler = (index) => {
   if (index === 0) {
     localStorage.setItem("difficulty", JSON.stringify("easy"));
-    window.location.assign("/");
+    window.location.assign("https://realthecarlo.github.io/Quiz-APP/index.html");
   } else if (index === 2) {
     localStorage.setItem("difficulty", JSON.stringify("hard"));
-    window.location.assign("/");
+    window.location.assign("https://realthecarlo.github.io/Quiz-APP/index.html");
   } else {
     localStorage.setItem("difficulty", JSON.stringify("medium"));
-    window.location.assign("/");
+    window.location.assign("https://realthecarlo.github.io/Quiz-APP/index.html");
   }
 };
 
